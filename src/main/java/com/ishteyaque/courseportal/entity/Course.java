@@ -21,14 +21,19 @@ public class Course {
     @Id
     @Column(name = "COURSEID")
     private Long courseId;
+
     @Column(name = "TITLE")
     private String title;
+
     @Column(name = "DESCRIPTION")
     private String description;
+
     @Column(name = "START_DATE")
     private LocalDate startDate;
+
     @Column(name = "END_DATE")
     private LocalDate endDate;
+
     @Column(name = "STATUS")
     private CourseStatus status;
 }
