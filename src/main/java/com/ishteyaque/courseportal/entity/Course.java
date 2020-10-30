@@ -19,7 +19,7 @@ import java.time.LocalDate;
 public class Course {
 
     @Id
-    @Column(name = "COURSE_ID")
+    @Column(name = "COURSEID")
     private Long courseId;
     @Column(name = "TITLE")
     private String title;
@@ -32,3 +32,4 @@ public class Course {
     @Column(name = "STATUS")
     private CourseStatus status;
 }
+
