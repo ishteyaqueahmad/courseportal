@@ -1,3 +1,4 @@
+/*
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -26,3 +27,4 @@ public class Solution {
     private LocalDate solutionDate;
 
 }
+*/

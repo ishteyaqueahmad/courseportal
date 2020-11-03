@@ -1,3 +1,4 @@
+/*
 package com.ishteyaque.courseportal.entity;
 
 import com.ishteyaque.courseportal.constants.Day;
@@ -35,3 +36,4 @@ public class ExamSchedule {
     private LocalDate time;
 
 }
+*/

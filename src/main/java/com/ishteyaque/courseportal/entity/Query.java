@@ -1,3 +1,4 @@
+/*
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -28,3 +29,4 @@ public class Query {
     @Column(name = "QDATE")
     private LocalDate queryDate;
 }
+*/

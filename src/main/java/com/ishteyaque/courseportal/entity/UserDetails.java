@@ -1,3 +1,4 @@
+/*
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -50,3 +51,4 @@ public class UserDetails {
 
 }
 
+*/

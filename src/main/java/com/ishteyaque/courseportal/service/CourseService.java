@@ -22,4 +22,13 @@ public class CourseService extends BaseService{
          courses.forEach(course -> result.add(course));
          return result;
     }
+
+    public void saveCourse(Course course){
+         courseRepository.save(course);
+    }
+
+    public void deleteUsingId(Long id)
+    {
+        courseRepository.deleteById(id);
+    }
 }

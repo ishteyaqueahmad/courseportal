@@ -1,3 +1,4 @@
+/*
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -24,3 +25,4 @@ public class Phones {
     @Column(name = "PHONETYPE")
     private String phoneType;
 }
+*/

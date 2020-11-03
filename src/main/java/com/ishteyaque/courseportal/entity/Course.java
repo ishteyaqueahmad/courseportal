@@ -5,36 +5,34 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "COURSE")
+@Table(name = "course",schema = "courseportal")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Course {
 
     @Id
-    @Column(name = "COURSEID")
+    @Column(name = "courseid")
     private Long courseId;
 
-    @Column(name = "TITLE")
+    @Column(name = "title")
     private String title;
 
-    @Column(name = "DESCRIPTION")
+    @Column(name = "description")
     private String description;
 
-    @Column(name = "START_DATE")
+    @Column(name = "start_date")
     private LocalDate startDate;
 
-    @Column(name = "END_DATE")
+    @Column(name = "end_date")
     private LocalDate endDate;
 
-    @Column(name = "STATUS")
+    @Column(name = "status")
+    @Enumerated(EnumType.STRING)
     private CourseStatus status;
 }
 

@@ -1,3 +1,4 @@
+/*
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -38,3 +39,4 @@ public class Question {
     @Column(name = "CORRECTANS")
     private String correctAns;
 }
+*/

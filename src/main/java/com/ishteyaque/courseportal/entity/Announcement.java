@@ -1,3 +1,4 @@
+/*
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -29,3 +30,4 @@ public class Announcement {
     @JoinColumn(name ="COURSEID" )
     private Course courses;
 }
+*/

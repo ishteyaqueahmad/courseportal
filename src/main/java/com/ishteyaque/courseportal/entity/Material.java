@@ -1,3 +1,4 @@
+/*
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -18,3 +19,4 @@ public class Material {
     private long courseId;
     private long userId;
 }
+*/

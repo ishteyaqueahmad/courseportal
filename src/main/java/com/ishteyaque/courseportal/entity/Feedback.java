@@ -1,3 +1,4 @@
+/*
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -36,3 +37,4 @@ public class Feedback {
     @Column(name = "OCCUPATION")
     private String occupation;
 }
+*/
