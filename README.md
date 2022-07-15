@@ -14,3 +14,6 @@ The system after careful analysis has been identified to be presented with the f
 
 ## Student Data Flow Diagram
 ![StudentFlow](https://user-images.githubusercontent.com/26144363/178137495-e2d44ef6-addf-4eca-a607-41f7f474700d.png)
+
+## Screenshot
+![home](https://user-images.githubusercontent.com/26144363/179204473-4fd1bae8-1f49-4ea5-ae5f-bac5d75b29fd.png)
