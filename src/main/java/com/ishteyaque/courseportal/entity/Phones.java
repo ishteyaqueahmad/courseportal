@@ -1,4 +1,4 @@
-/*
+
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "PHONES")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -25,4 +24,4 @@ public class Phones {
     @Column(name = "PHONETYPE")
     private String phoneType;
 }
-*/
+

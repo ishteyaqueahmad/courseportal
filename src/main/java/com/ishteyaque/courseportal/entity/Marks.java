@@ -1,31 +1,31 @@
-/*
+
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name="MARKS")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Marks {
 
-    @Column(name = "MARKS")
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long markId;
+    @Column
     private long marks;
 
-    @Column(name = "S_NAME")
+    @Column
     private String studentName;
 
-    @Column(name = "EXAMDATE")
+    @Column
     private LocalDate examDate;
 
 
 }
-*/
+

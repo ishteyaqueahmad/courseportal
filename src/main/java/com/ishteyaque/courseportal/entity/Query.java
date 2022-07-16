@@ -1,4 +1,4 @@
-/*
+
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.LocalDate;
 @Entity
-@Table(name = "QUERY")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -29,4 +28,4 @@ public class Query {
     @Column(name = "QDATE")
     private LocalDate queryDate;
 }
-*/
+

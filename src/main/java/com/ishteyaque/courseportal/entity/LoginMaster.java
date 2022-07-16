@@ -1,4 +1,4 @@
-/*
+
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -12,7 +12,6 @@ import javax.persistence.Table;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "LOGINMASTER")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -28,4 +27,4 @@ public class LoginMaster {
     @Column(name = "LOGOFFTIME")
     private LocalDate logoffTime;
 }
-*/
+

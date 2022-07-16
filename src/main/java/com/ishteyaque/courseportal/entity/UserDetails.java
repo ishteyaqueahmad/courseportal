@@ -1,54 +1,64 @@
-/*
+
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "USERDETAILS")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserDetails {
 
     @Id
-    @Column(name = "USERID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column
     private long userId;
-    @Column(name = "FIRSTNAME")
+
+    @Column
     private String firstName;
-    @Column(name = "LASTNAME")
+
+    @Column
     private String lastName;
-    @Column(name = "DOB")
+
+    @Column
     private String dateOfBirth;
-    @Column(name = "DOR")
+
+    @Column
     private String dateOfResignation;
-    @Column(name = "LOGINID")
+
+    @Column
     private String loginId;
-    @Column(name = "PASSWORD")
+
+    @Column
     private String password;
-    @Column(name = "LOGINTYPE")
+
+    @Column
     private String loginType;
-    @Column(name = "FORGOTPWQUESTION")
+
+    @Column
     private String forgotPassQuestion;
-    @Column(name = "FORGOTPWANSWER")
+
+    @Column
     private String forgotPassAnswer;
-    @Column(name = "PHOTOGRAPH")
+
+    @Column
     private String photograph;
-    @Column(name = "EMAILID")
+
+    @Column
     private String emailId;
-    @Column(name = "FAXNO")
+
+    @Column
     private String faxNo;
-    @Column(name = "QUALIFICATION")
+
+    @Column
     private String qualification;
-    @Column(name = "COURSEID")
+
+    @Column
     private long courseId;
 
 }
 
-*/
