@@ -9,13 +9,13 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "course",schema = "courseportal")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Course {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "courseid")
     private Long courseId;
 

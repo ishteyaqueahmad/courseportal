@@ -1,4 +1,4 @@
-/*
+
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "FEEDBACK")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -37,4 +36,4 @@ public class Feedback {
     @Column(name = "OCCUPATION")
     private String occupation;
 }
-*/
+

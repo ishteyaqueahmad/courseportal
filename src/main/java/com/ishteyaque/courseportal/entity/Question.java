@@ -1,4 +1,4 @@
-/*
+
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -11,32 +11,31 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "QUESTION")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Question {
 
     @Id
-    @Column(name="QNO")
+    @Column
     private long questonNo;
 
-    @Column(name = "QUESTION")
+    @Column
     private String question;
 
-    @Column(name = "ANS1")
+    @Column
     private String answer1;
 
-    @Column(name = "ANS2")
+    @Column
     private String answer2;
 
-    @Column(name = "ANS3")
+    @Column
     private String answer3;
 
-    @Column(name = "ANS4")
+    @Column
     private String answer4;
 
-    @Column(name = "CORRECTANS")
+    @Column
     private String correctAns;
 }
-*/
+

@@ -1,23 +1,20 @@
-/*
+
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "ADDRESSES")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Addresses {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "USERID")
     private long userId;
     @Column(name = "ADDRESSID")
@@ -37,4 +34,4 @@ public class Addresses {
     @Column(name = "PINCODE")
     private String pinCode;
 }
-*/
+

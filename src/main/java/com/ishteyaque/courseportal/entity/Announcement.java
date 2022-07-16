@@ -1,4 +1,4 @@
-/*
+
 package com.ishteyaque.courseportal.entity;
 
 import lombok.AllArgsConstructor;
@@ -9,7 +9,6 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "ANNOUNCEMENT")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,17 +16,19 @@ public class Announcement {
 
 
     @Id
-    @Column(name = "AID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column
     private long aId;
 
-    @Column(name = "DESCRIPTION")
+    @Column
     private String Description;
 
-    @Column(name = "ADATE")
+    @Column
     private LocalDate announcementDate;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name ="COURSEID" )
-    private Course courses;
+//    @OneToMany(cascade = CascadeType.ALL)
+//    @JoinColumn(name ="COURSEID" )
+//    @Column
+//    private Course courses;
 }
-*/
+
