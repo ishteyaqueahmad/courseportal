@@ -2,8 +2,6 @@ package com.ishteyaque.courseportal.controller;
 
 import com.ishteyaque.courseportal.entity.Course;
 import com.ishteyaque.courseportal.service.CourseService;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,29 +10,19 @@ import java.util.List;
 @RequestMapping("/courseportal")
 public class CourseController {
 
-    private final CourseService courseService;
+    private CourseService courseService;
 
-    public CourseController(CourseService courseService) {
-
-        this.courseService = courseService;
+    public CourseController(CourseService courseService){
+        this.courseService=courseService;
+    }
+@GetMapping("/courses")
+    public List<Course> getCourses(){
+        return courseService.getCourses();
     }
 
-    @GetMapping("/courses")
-    public ResponseEntity< List<Course>> getAllCourses(){
-
-
-        return new ResponseEntity<>(courseService.getAllAvailableCourse(), HttpStatus.OK);
-    }
-@PostMapping("/course")
-    public Course save(@RequestBody  Course course) {
-         courseService.saveCourse(course);
-    return course;
+    @PostMapping("/course")
+    public Course createCourse(@RequestBody Course course){
+       return courseService.saveCourse(course);
     }
 
-    @DeleteMapping("/deleteUser/{id}")
-        public void delete(@PathVariable String id){
-
-        Long userId=Long.parseLong(id);
-        courseService.deleteUsingId(userId);
-    }
 }
