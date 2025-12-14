@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/portal")
+@RequestMapping("/courseportal")
 public class CourseController {
 
     private final CourseService courseService;
@@ -25,7 +25,7 @@ public class CourseController {
 
         return new ResponseEntity<>(courseService.getAllAvailableCourse(), HttpStatus.OK);
     }
-@PostMapping("/save")
+@PostMapping("/course")
     public Course save(@RequestBody  Course course) {
          courseService.saveCourse(course);
     return course;

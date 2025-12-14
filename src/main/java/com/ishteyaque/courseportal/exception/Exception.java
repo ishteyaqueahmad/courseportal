@@ -1,4 +1,4 @@
 package com.ishteyaque.courseportal.exception;
 
-public class CustomException {
+public class Exception {
 }
