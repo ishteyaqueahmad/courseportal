@@ -6,6 +6,8 @@ import com.ishteyaque.courseportal.service.CourseService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class CourseServiceImpl implements CourseService {
 
@@ -22,5 +24,17 @@ public class CourseServiceImpl implements CourseService {
     @Override
     public Course saveCourse(Course course) {
         return courseRepo.save(course);
+    }
+
+    @Override
+    public Course updateCourse(Long id, Course course) {
+        if (id==null){
+            throw new IllegalArgumentException("id is required");
+        }
+        Course existingCourse = courseRepo.findById(id)
+                .orElseThrow(() -> new RuntimeException("Course not found with id: " + id));
+        existingCourse.setTitle(course.getTitle());
+
+        return courseRepo.save(existingCourse);
     }
 }
