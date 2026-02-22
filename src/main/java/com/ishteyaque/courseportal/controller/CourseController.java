@@ -25,4 +25,8 @@ public class CourseController {
        return courseService.saveCourse(course);
     }
 
+    @PostMapping("/course/{id}")
+    public Course updateCourse(@PathVariable Long id,@RequestBody Course course){
+        return courseService.updateCourse(id, course);
+    }
 }
