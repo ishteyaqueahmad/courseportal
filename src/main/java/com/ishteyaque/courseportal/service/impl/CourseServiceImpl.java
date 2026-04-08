@@ -1,6 +1,7 @@
 package com.ishteyaque.courseportal.service.impl;
 
 import com.ishteyaque.courseportal.entity.Course;
+import com.ishteyaque.courseportal.exception.Exception;
 import com.ishteyaque.courseportal.repository.CourseRepo;
 import com.ishteyaque.courseportal.service.CourseService;
 import org.springframework.stereotype.Service;
@@ -29,10 +30,10 @@ public class CourseServiceImpl implements CourseService {
     @Override
     public Course updateCourse(Long id, Course course) {
         if (id==null){
-            throw new IllegalArgumentException("id is required");
+            throw new Exception.CourseNotFoundException("id is required");
         }
         Course existingCourse = courseRepo.findById(id)
-                .orElseThrow(() -> new RuntimeException("Course not found with id: " + id));
+                .orElseThrow(() -> new Exception.CourseNotFoundException("Course not found with id: " + id));
         existingCourse.setTitle(course.getTitle());
 
         return courseRepo.save(existingCourse);
