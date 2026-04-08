@@ -10,7 +10,7 @@ import java.util.List;
 @RequestMapping("/courseportal")
 public class CourseController {
 
-    private CourseService courseService;
+    private final CourseService courseService;
 
     public CourseController(CourseService courseService){
         this.courseService=courseService;
@@ -25,4 +25,8 @@ public class CourseController {
        return courseService.saveCourse(course);
     }
 
+    @PostMapping("/course/{id}")
+    public Course updateCourse(@PathVariable Long id,@RequestBody Course course){
+        return courseService.updateCourse(id, course);
+    }
 }
